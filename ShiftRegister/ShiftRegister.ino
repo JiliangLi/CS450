@@ -48,7 +48,7 @@ void loop(){
   
   duration2 = pulseIn(echoPin, HIGH);
 
-
+  
   if(duration2<200){
     red();
   }
@@ -80,6 +80,7 @@ void red(){
   digitalWrite(redLed, HIGH);
   delay(1000);
 }
+
 void closer(){
   leds = 0;
   updateShiftRegister();
